@@ -1,1 +1,1 @@
-# Project12_7
+https://github.com/MagdaGresk/Project12_7.git
