@@ -8,7 +8,7 @@ function Card(id, name) {
 
 	function createCard() {
 		var card = $('<li class="card"></li>')
-		var cardDeleteBtn = $('<button class="btn-delete">x</button>')
+		var cardDeleteBtn = $('<button class="btn-delete">*</button>')
 		var cardDescription = $('<p class="card-description"></p>')
 		
 		cardDeleteBtn.click(function(){
@@ -21,6 +21,7 @@ function Card(id, name) {
 		return card
 	}
 }
+
 Card.prototype = {
 	removeCard: function() {
 		var self = this
@@ -29,7 +30,7 @@ Card.prototype = {
 	      	method: 'DELETE',
 	      	success: function(){
 	        	self.$element.remove()
-	      }
+	      	}
 	    })
 	}
 }

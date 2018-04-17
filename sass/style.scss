@@ -1,0 +1,105 @@
+$fonts: 'Cutive Mono', monospace;
+$light-grey: #dfe6e9;
+$grey: #636e72;
+$blue: #0984e3;
+$red: #ff7675;
+$yellow: #ffeaa7;
+
+.board {
+	background-color: #dfe6e9;
+	height: auto;
+	max-width: auto;
+	min-height: 900px;
+}
+
+.board h1 {
+	color: $blue;
+	font-family: $fonts;
+	font-size: 50px;
+	font-weight: 700;
+	padding-top: 40px;
+	text-align: center;
+}
+
+button {
+	font-family: $fonts;
+	font-size: 30px;
+	height: 40px;
+	text-align: center;
+	&.create-column {
+		background-color: $blue;
+		border-radius: 20px;
+		display: block;
+		margin: 40px auto;
+		width: 240px;
+	}
+	&.btn-delete {
+		background-color: $grey;
+		border-radius: 90px;
+		margin: 3px;
+		width: 40px;
+	}
+	&.column-add-card {
+		background-color: $red;
+		border-radius: 20px;
+		margin: 3px;
+		width: 240px;
+	}
+}
+
+.column-container {
+  	background: repeating-linear-gradient(-45deg, #55ee70 40%, #55acee 50%);
+  	border-radius: 20px;
+  	display: flex;
+  	height: auto;
+    justify-content: center;
+	margin: 50px auto;
+	max-width: 1500px;
+	min-height: 250px;
+	padding: 10px;
+	text-align: center;
+}
+
+.column {
+	background-color: white;
+	border: 2px solid $grey;
+	border-radius: 20px;
+	font-family: $fonts;
+	margin: 10px;
+	min-width: 300px;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 350px;
+	ul {
+		min-height: 200px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		color: $red;
+		font-size: 40px;
+	}
+	li {
+		background-color: $yellow;
+		border: 2px solid $grey;
+		border-radius: 20px;
+		height: 150px;
+		margin: 5px auto;
+		width: 300px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.column-container {
+		display: block;
+		margin: 0 auto;
+	}
+	.column {
+		display: block;
+		margin: 10px auto;
+	}
+}
